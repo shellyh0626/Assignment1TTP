@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: right;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .logo {
+            float: left;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -230%);
+            font-size: 50px;
+            font-weight: bold;
+            color: #2e2e2e;
+        }
+
+        .action-required {
+            text-align: center;
+        }
+
+        .subsections {
+            font-size: 30px;
+            font-weight: bold;
+            color: #2e2e2e;
+            padding-top: 25px;
+            padding-bottom: 5px;
+        }
+
+        .p {
+            margin: 0px;
+        }
+
+        label.donation {
+            margin: 0px 4px 2em;
+        }
+
+        label.billing,
+        .card-info {
+            width: 100px;
+            display: inline-block;
+            margin: 4px;
+        }
+
+        .card-type {
+            padding-bottom: 20px;
+        }
+
+        .submit-btn {
+            width: 200px;
+            height: 50px;
+            background-color: #4caf50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            margin: 20px auto;
+            cursor: pointer;
+            align-items: left;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Animal Shelters</div>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/adopt.html">Adopt</a></li>
+            <li><a href="/donate">Donate</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="centered">Thank you!</div>
+        <img src="dog.jpg">
+    </div>
+
+    <div class="action-required">
+        <div class="gift-amount">
+            <div class="subsections">Gift Amount</div>
+            <p>Select gift amount:</p>
+            <input type="radio" name="amount"><label class="donation">$25.00</label>
+            <input type="radio" name="amount"><label class="donation">$50.00</label>
+            <input type="radio" name="amount"><label class="donation">$100.00</label>
+            <input type="radio" name="amount"><label class="donation">$250.00</label>
+            <input type="radio" name="amount"><label class="donation"> $500.00</label>
+            <input type="radio" name="amount">
+            <input type="text"><br>
+            <input type="checkbox"><label>Yes, automatically repeat this gift every month.</label>
+        </div>
+
+        <div class="billing-info">
+            <div class="subsections">Billing Information</div>
+            <label class="billing">First Name: </label><input type="text" required><br>
+            <label class="billing">Last Name: </label><input type="text" required><br>
+            <label class="billing">Address 1: </label><input type="text" required><br>
+            <label class="billing">Address 2: </label><input type="text" required><br>
+            <label class="billing">City: </label><input type="text" required><br>
+            <label class="billing">State/Province: </label>
+            <select>
+                <option value="AL" selected>Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select><br>
+            <label class="billing">Zip Code: </label><input type="text" required><br>
+            <label class="billing">Email Address: </label><input type="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+            <input type="checkbox"><label>Yes, I would like to make this donation anonymously</label><br>
+        </div>
+
+        <div class="payment-info">
+            <div class="subsections">Payment Information</div>
+        </div>
+        <div class="card-type">
+            <p>Credit Card Type: </p>
+            <input type="radio" name="card-type"><label>VISA</label>
+            <input type="radio" name="card-type"><label>Discover</label>
+            <input type="radio" name="card-type"><label>American Express</label>
+            <input type="radio" name="card-type"><label>Mastercard</label><br>
+        </div>
+        <div class="user-card-info">
+            <label class="card-info">Card Number: </label><input type="text" required><br>
+            <label class="card-info">CVV Number: </label><input type="text" required><br>
+            <label class="card-info">Expiration Date: </label><input type="text" required><br>
+        </div>
+
+        <div class="button">
+            <button class="submit-btn">Donate Now</button>
+        </div>
+    </div>
+</body>
+
+</html>
