@@ -1,213 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body{
-          margin: 0;
-        }
-  
-        nav {
-          background-color: #333;
-          color: white;
-          text-align: right;
-          padding: 20px;
-        }
-  
-        nav ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-  
-        nav ul li {
-          display: inline-block;
-          margin-right: 20px;
-        }
-  
-        nav ul li a {
-          text-decoration: none;
-          color: white;
-          padding: 5px 10px;
-        }
-  
-        nav ul li a:hover {
-          background-color: #555;
-        }
-  
-        .logo {
-          float: left;
-          color: white;
-          font-weight: bold;
-          font-size: 20px;
-        }
-        .banner {
-          height: 300px;
-          background-image: url('banner.jpg');
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
-          text-align: center;
-          padding: 20px;
-          }
-        .banner-content {
-          color: #555;
-          font-size: 24px;
-          font-weight: bold;
-          position: relative;
-          top: 40%;
-        }
-        .custom-hr {
-          height: 2px;
-          background-color: #555;
-          border: none;
-        }
-        #thank-note{
-          text-align: center;
-          font-size: 20px;
-          color: #555;
-        }
-        #item-details{
-            margin-left: 2%;
-        }
-        #item-head{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 25px;
-            color: #555;
-            font-weight: bold;
-        }
-        #item-type{
-            font-size: 20px;
-            color: #555;
-            font-weight: bold;
-        }
-        #item-notice{
-            font-size: 20px;
-            color: #555;
-        }
-        #item-details span{
-            display: block;
-        }
-        #item-details ul{
-            font-size: 20px;
-            color: #555;
-        }
-        #donate-head{
-            font-size: 20px;
-            color: #555;
-            font-weight: bold;
-            margin-top: 1%;
-        }
-        .donate-info span{
-            font-size: 20px;
-            color: #555;
-        }
-        #wishList-head{
-            font-size: 20px;
-            color: #555;
-            font-weight: bold;
-            margin-top: 1%;
-        }
-        #wish-links a{
-            font-size: 20px;
-            color: #4caf50;
-            text-decoration: none;
-        }
-        #wish-detail{
-            font-size: 20px;
-            color: #555;
-        }
-        #footer{
-            background-color:  #333;
-            margin-top: 2%;
-            height: fit-content;
-            padding-left: 2%;
-            padding-top: 1%;
-        }
-        .footer-links a{
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-        }
-        .footer-links ul{
-            list-style-type: none;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        #copyright{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 15px;
-            margin-top: 2%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      text-align: right;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    .logo {
+      float: left;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .banner {
+      height: 300px;
+      background-image: url('banner.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .banner-content {
+      color: #555;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative;
+      top: 40%;
+    }
+
+    .custom-hr {
+      height: 2px;
+      background-color: #555;
+      border: none;
+    }
+
+    #thank-note {
+      text-align: center;
+      font-size: 20px;
+      color: #555;
+    }
+
+    #item-details {
+      margin-left: 2%;
+    }
+
+    #item-head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      color: #555;
+      font-weight: bold;
+    }
+
+    #item-type {
+      font-size: 20px;
+      color: #555;
+      font-weight: bold;
+    }
+
+    #item-notice {
+      font-size: 20px;
+      color: #555;
+    }
+
+    #item-details span {
+      display: block;
+    }
+
+    #item-details ul {
+      font-size: 20px;
+      color: #555;
+    }
+
+    #donate-head {
+      font-size: 20px;
+      color: #555;
+      font-weight: bold;
+      margin-top: 1%;
+    }
+
+    .donate-info span {
+      font-size: 20px;
+      color: #555;
+    }
+
+    #wishList-head {
+      font-size: 20px;
+      color: #555;
+      font-weight: bold;
+      margin-top: 1%;
+    }
+
+    #wish-links a {
+      font-size: 20px;
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    #wish-detail {
+      font-size: 20px;
+      color: #555;
+    }
+
+    #footer {
+      background-color: #333;
+      margin-top: 2%;
+      height: fit-content;
+      padding-left: 2%;
+      padding-top: 1%;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+
+    .footer-links ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    #copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 15px;
+      margin-top: 2%;
+    }
+  </style>
 </head>
-    <body>
-      <nav>
-        <div class="logo">Animal Shelters</div>
-        <ul>
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="/adopt.html">Adopt</a></li>
-          <li><a href="/donate.html">Donate</a></li>
-        </ul>
-      </nav>
-      <div class="banner">
-        <div class="banner-content">
-          <h1>Help Us Save Lives</h1>
-          <p>Adopt. Donate.</p>
-        </div>
-      </div>
-      <hr class="custom-hr">
-      <div id="thank-note">
-        <p>Every donation, no matter the size, has a profound impact on the lives of the animals we serve. Your kindness and generosity inspire us to work harder and advocate for their well-being. Together, we are making a positive change in their lives. Thank You!</p>
-      </div>
-      <div id="items">
-        <span id="item-head">Donate Items</span>
-        <div id="item-details">
-            <span id="item-type">Secondhand Items:</span>
-            <span id="item-notice">We will happily accept your second-hand pet items. We ask that any used items are cleaned prior to donating. We can accept:</span>
-            <ul>
-                <li>Unopened and unexpired food and treats</li>
-                <li>Blankets, Towels, Sheets</li>
-                <li>Leashes and Harnesses</li>
-                <li>Crates and Carriers</li>
-                <li>Enrichment Toys</li>
-                <li>Unopened Litter, Pellets, and Hay</li>
-            </ul>
-            <span><i>Please note we cannot accept open/expired food and treats, medications, pillows or mattresses. </i></span>
-            <span id="donate-head">Donate Via Mail</span>
-            <div class="donate-info">
-                <span>Send Contribution:</span>
-                <span>Anima Shelters of NYC at</span>
-                <span>P.O. Box 10903</span>
-                <span>New York, NY 22310 - 2860</span>
-            </div>
-            <div id="wish-list">
-                <span id="wishList-head">wish Lists</span>
-                <span id="wish-detail">Send needed items directly to us from our Wish List and you can help feed and comfort the littles ones in our care.</span>
-                <span id="wish-links"><a href="https://www.amazon.com">Amazon Wish List</a> | <a href="https://www.chewy.com">chewy Wish List</a></span>
-            </div>
-        </div>
-      </div>
-      <footer id="footer">
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="/adopt.html">Adopt</a></li>
-                <li><a href="#">Donate</a></li>
-            </ul>
-        </div>
-        <span id="copyright"><i>Animal Shelters Copyright @ 2023</i></span>
-      </footer>
-    </body>
+
 <body>
-    
+  <nav>
+    <div class="logo">Animal Shelters</div>
+    <ul>
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/adopt.html">Adopt</a></li>
+      <li><a href="/donation.html">Donate</a></li>
+    </ul>
+  </nav>
+  <div class="banner">
+    <div class="banner-content">
+      <h1>Help Us Save Lives</h1>
+      <p>Adopt. Donate.</p>
+    </div>
+  </div>
+  <hr class="custom-hr">
+  <div id="thank-note">
+    <p>Every donation, no matter the size, has a profound impact on the lives of the animals we serve. Your kindness and
+      generosity inspire us to work harder and advocate for their well-being. Together, we are making a positive change
+      in their lives. Thank You!</p>
+  </div>
+  <div id="items">
+    <span id="item-head">Donate Items</span>
+    <div id="item-details">
+      <span id="item-type">Secondhand Items:</span>
+      <span id="item-notice">We will happily accept your second-hand pet items. We ask that any used items are cleaned
+        prior to donating. We can accept:</span>
+      <ul>
+        <li>Unopened and unexpired food and treats</li>
+        <li>Blankets, Towels, Sheets</li>
+        <li>Leashes and Harnesses</li>
+        <li>Crates and Carriers</li>
+        <li>Enrichment Toys</li>
+        <li>Unopened Litter, Pellets, and Hay</li>
+      </ul>
+      <span><i>Please note we cannot accept open/expired food and treats, medications, pillows or mattresses.
+        </i></span>
+      <span id="donate-head">Donate Via Mail</span>
+      <div class="donate-info">
+        <span>Send Contribution:</span>
+        <span>Anima Shelters of NYC at</span>
+        <span>P.O. Box 10903</span>
+        <span>New York, NY 22310 - 2860</span>
+      </div>
+      <div id="wish-list">
+        <span id="wishList-head">wish Lists</span>
+        <span id="wish-detail">Send needed items directly to us from our Wish List and you can help feed and comfort the
+          littles ones in our care.</span>
+        <span id="wish-links"><a href="https://www.amazon.com">Amazon Wish List</a> | <a
+            href="https://www.chewy.com">chewy Wish List</a></span>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="/adopt.html">Adopt</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </div>
+    <span id="copyright"><i>Animal Shelters Copyright @ 2023</i></span>
+  </footer>
 </body>
+
+<body>
+
+</body>
+
 </html>
