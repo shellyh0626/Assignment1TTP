@@ -1,8 +1,8 @@
-body{
+body {
   margin: 0;
 }
 .front-img {
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   display: block;
