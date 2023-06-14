@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adopt Us</title>
     <style>
-      .dog-img {
-        width: 800px;
+      .front-img {
+        width: 100%;
         height: auto;
         max-width: 100%;
         display: block;
         margin: 0 auto;
+        margin-top: 20px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 300px;
         margin-top: 20px;
       }
 
@@ -26,16 +33,63 @@
         border-radius: 4px;
         margin: 20px auto;
         cursor: pointer;
+        align-items: left;
       }
 
       .adopt-button:hover {
         background-color: #45a049;
       }
 
-      .center-par {
-        width: 400px;
+      .par-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+        width: auto;
+        margin: 20px auto;
+      }
+
+      .par {
+        width: 300px;
         text-align: center;
-        margin: 0 auto;
+        margin: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .Turnin-btn {
+        display: block;
+        width: 200px;
+        height: 50px;
+        background-color: #ff0000;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        margin: 20px auto;
+        cursor: pointer;
+        align-items: left;
+      }
+
+      .Turnin-btn:hover {
+        background-color: #cb3939;
+      }
+
+      .Volunteer-btn {
+        display: block;
+        width: 200px;
+        height: 50px;
+        background-color: #adb93b;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        margin: 20px auto;
+        cursor: pointer;
+        align-items: left;
+      }
+
+      .Volunteer-btn:hover {
+        background-color: #887810;
       }
 
       nav {
@@ -66,7 +120,7 @@
         background-color: #555;
       }
 
-      .logo {
+      .name {
         float: left;
         color: white;
         font-weight: bold;
@@ -76,7 +130,7 @@
   </head>
   <body>
     <nav>
-      <div class="logo">Animal Shelters</div>
+      <div class="name">Animal Shelters</div>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/services">Services</a></li>
@@ -84,15 +138,33 @@
       </ul>
     </nav>
 
-    <img src="/dog&cat.jpg" class="dog-img" />
-    <button class="adopt-button">Adopt Us</button>
-    <p class="center-par">
-      Adopt pets instead of buying, by adopting, you are giving a loving home to
-      an animal in need. Many animals in shelters are abandoned, stray, or
-      surrendered, and by adopting them, you are providing a second chance at a
-      happy life.
-    </p>
-
-    <button>Turn <Inp></Inp></button>
+    <img src="/adopt picture.jpg" class="front-img" />
+    <div class="buttons">
+      <button class="Turnin-btn">Turn In</button>
+      <button class="adopt-button">Adopt Us</button>
+      <button class="Volunteer-btn">Volunteer</button>
+    </div>
+    <div class="par-container">
+      <p class="par">
+        We understand that it can be incredibly difficult to let go of your
+        beloved pet for any reason. We want to express our gratitude for
+        trusting us with your pet's well-being. By choosing to leave your pet
+        here at our shelter, you are providing them with a safe and caring
+        environment, rather than leaving them to fend for themselves in the
+        wild. Thank you for making this compassionate choice.
+      </p>
+      <p class="par">
+        Adopt pets instead of buying, by adopting, you are giving a loving home
+        to an animal in need. Many animals in shelters are abandoned, stray, or
+        surrendered, and by adopting them, you are providing a second chance at
+        a happy life.
+      </p>
+      <p class="par">
+        Welcome to our animal shelter, a place where passionate individuals who
+        adore cats or dogs can make a meaningful difference. We invite
+        volunteers who share a deep love for these furry companions to join our
+        dedicated team.
+      </p>
+    </div>
   </body>
 </html>
